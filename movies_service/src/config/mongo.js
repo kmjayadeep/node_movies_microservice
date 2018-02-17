@@ -2,7 +2,7 @@ const MongoClient = require('mongodb').MongoClient
 
 const getMongoUrl = (options) => {
   const url = options.servers
-    .reduce((prev, cur) => prev + cur + ',', 'mongodb://')
+    .reduce((prev, cur) => prev + cur + ',', 'mongodb://'+options.user+':'+options.pass+'@')
   return url.slice(0, -1)
 }
 

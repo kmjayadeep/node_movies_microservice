@@ -21,7 +21,7 @@
 		"chrome-debug": "node --debug-brk --inspect src/index.js"
 	},
 	"dependencies": {
-		"express": "^4.16.2",
+		"express": "^4.17.3",
 		"helmet": "^3.11.0",
 		"mongodb": "^3.0.2",
 		"morgan": "^1.9.0",
